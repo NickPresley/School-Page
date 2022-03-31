@@ -11,15 +11,40 @@
         body {
             background-color: rgb(40, 40, 40);
         }
-        .thing1 {
+        .thing1, center {
             color: wheat;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             font-size: 48px;
-            text-align: center;
         }
+        button {
+                text-decoration: none;
+                color: beige;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                border: 6px rgb(45, 45, 45) solid;
+                font-size: 100%;
+                border-radius: 4px;
+                background-color: rgb(50, 50, 50);
+                box-shadow: 3px 3px 4px black;
+                transition-duration: .5s;
+                margin-bottom: 8px;
+            }
+            button:active {
+                transform: rotate(-5deg);
+                box-shadow: none;
+            }
+            button:hover {
+                cursor: pointer;
+            }
+
     </style>
     <p class="thing1">
-        MY SECOND PAGE
+        <button class="btn" onclick="document.location.href = '../index.html'">Home</button> 
+        <center>My Second Page</center><br>
+        <center>
+            <MARQUEE bgcolor="blue">
+                <font size=10>Nick</MARQUEE>
+            </MARQUEE>
+        </center>
     </p>
 </body>
 </html>

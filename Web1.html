@@ -11,7 +11,7 @@
             body {
                 background-color: rgb(40, 40, 40);
             }
-            .name, p, center  {
+            .name, p, center, li  {
                 text-align: center;
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 color: white;
@@ -29,17 +29,93 @@
             .hW {
                 border: none;
             }
-
+            hr {
+                border-radius: 4px;
+            }
+            img {
+                width: 20%;
+            }
+            .regbtn, .spinonclick {
+                text-decoration: none;
+                color: beige;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                border: 6px rgb(45, 45, 45) solid;
+                font-size: 100%;
+                border-radius: 4px;
+                background-color: rgb(50, 50, 50);
+                box-shadow: 3px 3px 4px black;
+                transition-duration: .5s;
+                margin-bottom: 8px;
+            }
+            .spinonclick {
+                transition-duration: 5s;
+                transition-delay: .5s;
+            }
+            .spinonclick:active {
+                transform: rotate(270000deg);
+                box-shadow: none;
+            }
+            .regbtn:active {
+                transform: rotate(-5deg);
+                box-shadow: none;
+            }
+            button:hover {
+                cursor: pointer;
+            }
+            .btns {
+                justify-content: left;
+            }
+            li {
+                text-align: left;
+            }
         </style>
             <center class="hW">Hello World</center> <br>
             <img src="https://i.postimg.cc/8C2Fqhsn/web1.png" alt="web1 pic">
-            <p class="name">Nicholas Presley</p> <br>
-            <p>I like to play <u>Basketball, Volleyball, and Soccer</u></p> <br>
+            <p class="name">Nicholas Presley</p>
+            <p>I like to play <u>Basketball, Volleyball, and Soccer</u></p>
             <p>I like to eat <i>Lasagna, Spaghetti, and Ice Cream</i></p>
             <center>What is programming</center>
             <p>Programming is a way for people to exspress their creativity and art into something you usualy can't do in the real world. With programming people can bring their usualy impossible dreams to reality. With programming people have made many new creations like Social Media where you can talk to people on the other side of the world in a split seccond. That means that you can talk to people in the U.K. from the U.S.
             </p>
-
+            <hr size="10px" color="cyan">
+            <img src="https://lh3.googleusercontent.com/fife/AAWUweWJ0a0GakDe_V2i2n40NZG2zimQDAVLygUmpyp-3JGhTN3Dj65SZEXoNjHmXngctqtgmy53DwZHYljIuA0OGtJQId_m_lyGocYEz9_s7b_tQ7_N2lMfabECjdUkY1Y46-EEsO3FH_UtLWerxdm8sEPJoeSRH0HUyAXH1RwmMkxNXcz32E4b5uvRX5CQ2f6KTuSo1XhjZ-J8umVxhq6WR8M_RPogdxbzeatNlwE1Z-PnTomlpFi5NzlXWUG34B2oLAuOm9m8cC34loefauhantC9bVWuEgFsW2KoKPsw_oJpLO3iJXFTkmBCdj8Z_1kGb9WP_Q3aewCp57-Mv1IAg5Vxlcl5v41fWRlVpXPDrbtEahJDlqM4b3JAtK90DJL2DyWxVze9fIL7Rw812RnPDOESOzl8vivAywg5b-WvAk2pzj-FT2s5kIN6Fg3UWScAPKylqMeWlOCAQvV-DsgxZJPMjILOW_rj-VV_rnns1-HShiZAiCREHboVS0k-LYHQO1wIGr2xwJopPMmHyUxCmvl7Bc7VTmvnanZnNy8fYb4sC8iOSOyTt6_mFxIg50YFIC1w5yYmN-cP1rA6tweURSe_TbpNxXnt3cVmxVoBj_quiefiVZznkwfw9FdssKeOmz-z5-RovHcw4pa2HpAZKzAUmRrcV3oRKovh1nsi5zP0NotOSFomj1ohEHcPnTkFDlyq1m7seXaOpFvIXc1wl8rK_36mUNueK40uHK_zH3KFVw0KjNMxxNg7HArjW5nyEHrLtfLdaO5G14KRJvxQ-j1r0tZvivnU6Psh0uFH4p6uGXFX-ZyVPu8r=w1920-h937" alt="Picture Of Me">
+            <img src="https://mail.google.com/mail/u/1?ui=2&ik=27e4e1142d&attid=0.1&permmsgid=msg-f:1728652538690346376&th=17fd68533cb71d88&view=fimg&disp=thd&attbid=ANGjdJ9JOsdHWwkV-qdw-4pMlUu9nQsq6JPAC6as2ppsigJ0yXMx5xN_-3KrnJbqvMGuFAGcJP_ifUmSJLpXGlKxL9d-_g6XKY6Ry-Cw6P712rWCZZKEjaPuKDPmlEw&ats=2524608000000&sz=w1920-h937" alt="Image Of Family">
+            <p>My family consists of My Mom (Danielle), My Step Dad (Arron), My Sister (Jane), and My Brother (Jameson). We all like to go on trips like going camping or going to an Amusment Park. Recently My Sister Jane has moved out but we still have so much fun together. Everyone in my family loves the outdoors including me.</p>
+            <hr size="10px" color="cyan">
+            <p class="one">
+                <p class="center">Welcome to my webpage</p>
+                <p>Here are some of my favorite links</p>
+            </p>
+            <div class="btns">
+                <button class="regbtn" onclick="redirect('./web3/page2.html');">Page 2</button>
+                <button class="regbtn" onclick="redirect('http:/portal.allenisd.org');">Portal</button>
+                <button class="regbtn" onclick="redirect('http:/vscode.dev');">VSC</button>
+                <button class="regbtn" onclick="redirect('http:/google.com');">Google</button>
+                <button class="regbtn" onclick="redirect('http:/codepen.io');">Code Pen</button>
+                <button class="regbtn" onclick="redirect('about:blank');">Blank Page</button>
+                <button class="spinonclick">Spin</button>
+            </div> <br>
+            <p>My Friends</p>
+            <ol>
+                <li>Tristan</li>
+                <li>Braden</li>
+                <li>Serena</li>
+                <li>Juaquin</li>
+                <li>Laziz</li>
+            </ol>
+            <p>My Favorite Game Systems</p>
+            <ul>
+                <li>Xbox</li>
+                <li>Nintendo Gamecube</li>
+                <li>Nintendo 64</li>
+                <li>Nintendo Game Boy</li>
+                <li>Computer</li>
+            </ul>
+            <script>
+                function redirect(link) {
+                    document.location.href = link;
+                }
+            </script>
 
     </body>
 </html>
