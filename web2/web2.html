@@ -39,20 +39,28 @@
             .btns {
                 justify-content: left;
             }
+            .zero {
+                font-size: 48px;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                color: azure;
+                text-shadow: -3px -3px 10px black
+            }
     </style>
         </style>
-        
+        <marquee behavior="scroll" direction="left" scrollamount="20">
+            <span class="zero">
+                Nicholas Andrew Presley
+            </span>
+        </MARQUEE>
         <p class="one">
             <p class="center">Welcome to my webpage</p>
-            <button onclick="redirect('../web3/page2.html');">Page 2</button>
         </p>
-        <div class="btns">
-            <button onclick="redirect('http:/portal.allenisd.org');">Portal</button><br>
-            <button onclick="redirect('http:/vscode.dev');">VSC</button><br>
-            <button onclick="redirect('http:/google.com');">Google</button><br>
-            <button onclick="redirect('http:/codepen.io');">Code Pen</button><br>
-            <button onclick="redirect('about:blank');">Blank Page</button>
-        </div>
+        <marquee behavior="scroll" direction="right" scrollamount="20">
+            <span class="zero">
+                This is an AWESOME webpage
+            </span>
+        </marquee>
+        
 
     </body>
 </html>
